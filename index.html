@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA CAFÉ | 精品手作咖啡廳品牌官網</title>
+    <meta name="description" content="AURA CAFÉ 致力於尋覓全球珍稀單品咖啡豆，結合職人手沖與溫度美學，為您打造極致奢華的咖啡感官饗宴與優雅的放鬆空間。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 奢華品牌導覽列 -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">AURA</span>
+                <span class="logo-sub">CAFÉ</span>
+            </a>
+            <button class="mobile-nav-toggle" aria-label="切換選單" id="mobileToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about" class="nav-link">關於品牌</a></li>
+                    <li><a href="#beans" class="nav-link">精選單品</a></li>
+                    <li><a href="#craft" class="nav-link">職人沖煮</a></li>
+                    <li><a href="#gallery" class="nav-link">空間美學</a></li>
+                    <li><a href="admin.html" class="nav-link" target="_blank">後台管理</a></li>
+                    <li><a href="#booking" class="nav-link btn-reserve-nav">線上預約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首頁奢華視覺 (Hero Section) -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content">
+            <div class="reveal-content">
+                <span class="hero-subtitle">The Art of Pure Coffee Craft</span>
+                <h1 class="hero-title">淬鍊一杯<br>流動的感官藝術</h1>
+                <p class="hero-desc">在奢華幽靜的極簡空間中，以精確至 0.1°C 的溫度，為您封存全球珍稀咖啡莊園的芬芳靈魂。</p>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary">立即預約席位</a>
+                    <a href="#beans" class="btn btn-secondary">探索精品豆</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 關於我們 (About Us) -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">OUR STORY</span>
+                <h2 class="section-title">極致追求 的溫度美學</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-content reveal-on-scroll">
+                    <h3 class="about-subtitle">從一顆生豆，到唇齒間的永恆</h3>
+                    <p class="about-p">AURA CAFÉ 誕生於對手作咖啡的近乎偏執的熱愛。我們堅信，咖啡不僅是一杯飲品，更是一場關於氣味、時間與溫度的儀式。我們每年親自探訪全球海拔 1,500 公尺以上的微氣候莊園，僅挑選最頂級的 1% 咖啡豆。</p>
+                    <p class="about-p">在這裡，每一杯手沖咖啡都是職人與您心靈的私密對話。在光影交織的奢華空間裡，拋開都市的繁雜，靜靜聆聽熱水滴入玻璃壺的呢喃，品嚐層次分明的果香與綿長回甘。</p>
+                    <div class="about-badges">
+                        <div class="badge-item">
+                            <span class="badge-num">100%</span>
+                            <span class="badge-label">珍稀單品豆</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-num">90+</span>
+                            <span class="badge-label">精品評分</span>
+                        </div>
+                        <div class="badge-item">
+                            <span class="badge-num">0.1g</span>
+                            <span class="badge-label">精確沖煮</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper reveal-on-scroll">
+                    <div class="image-border-decor"></div>
+                    <img src="images/hero_bg.png" alt="AURA CAFÉ 空間氛圍" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 精選單品豆介紹 (Specialty Beans) -->
+    <section class="beans-section" id="beans">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">ORIGINS</span>
+                <h2 class="section-title">尋覓全球 珍稀單品豆</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="beans-featured reveal-on-scroll">
+                <div class="beans-featured-img">
+                    <img src="images/beans_showcase.png" alt="精品咖啡豆特寫">
+                </div>
+                <div class="beans-featured-info">
+                    <span class="beans-tag">本月奢華限定</span>
+                    <h3 class="beans-featured-title">巴拿馬翡翠莊園 瑰夏 (Geisha)</h3>
+                    <p class="beans-featured-desc">產自巴拿馬波奎特火山產區的頂級瑰夏，在極致的日曬工藝下，展現出令人驚豔的茉莉花香、荔枝與明亮的柑橘酸質，尾韻如同大吉嶺紅茶般高雅悠長。</p>
+                    <div class="beans-profile">
+                        <div class="profile-row">
+                            <span>產地風味：</span><strong>茉莉花、荔枝、佛手柑、白葡萄</strong>
+                        </div>
+                        <div class="profile-row">
+                            <span>烘焙程度：</span>
+                            <div class="roast-meter">
+                                <span class="roast-level" style="width: 25%"></span>
+                            </div>
+                            <small class="roast-label-text">極淺烘焙 (Light Roast)</small>
+                        </div>
+                    </div>
+                    <button class="btn btn-gold btn-order-bean" data-bean="巴拿馬翡翠莊園 瑰夏 (Geisha)">線上訂購豆品</button>
+                </div>
+            </div>
+
+            <div class="beans-grid">
+                <!-- 豆款卡片 1 -->
+                <div class="bean-card reveal-on-scroll">
+                    <div class="bean-card-header">
+                        <span class="bean-origin">衣索比亞</span>
+                        <h4 class="bean-name">耶加雪菲 (Yirgacheffe)</h4>
+                    </div>
+                    <div class="bean-card-body">
+                        <p class="bean-desc">極具代表性的水洗單品，清新脫俗的檸檬香氣與茉莉花香，伴隨蜜桃般的溫潤甜感，酸質活潑溫柔。</p>
+                        <div class="roast-info">
+                            <span>烘焙：淺焙</span>
+                            <span>海拔：1,900m</span>
+                        </div>
+                        <div class="flavor-indicators">
+                            <div class="flavor-item"><span>花香</span><div class="dot-bar"><span class="dots" style="width: 90%"></span></div></div>
+                            <div class="flavor-item"><span>果酸</span><div class="dot-bar"><span class="dots" style="width: 80%"></span></div></div>
+                            <div class="flavor-item"><span>甘甜</span><div class="dot-bar"><span class="dots" style="width: 70%"></span></div></div>
+                        </div>
+                    </div>
+                    <div class="bean-card-footer">
+                        <span class="bean-price">NT$ 680 <small>/ 227g</small></span>
+                        <button class="btn btn-outline-gold btn-order-bean" data-bean="衣索比亞 耶加雪菲">訂購</button>
+                    </div>
+                </div>
+
+                <!-- 豆款卡片 2 -->
+                <div class="bean-card reveal-on-scroll">
+                    <div class="bean-card-header">
+                        <span class="bean-origin">牙買加</span>
+                        <h4 class="bean-name">藍山 No.1 (Blue Mountain)</h4>
+                    </div>
+                    <div class="bean-card-body">
+                        <p class="bean-desc">來自牙買加藍山最高海拔區域，將酸度、苦度、甘甜與醇厚度完美融合，香氣濃郁，口感如絲綢般圓潤滑順。</p>
+                        <div class="roast-info">
+                            <span>烘焙：中焙</span>
+                            <span>海拔：1,600m</span>
+                        </div>
+                        <div class="flavor-indicators">
+                            <div class="flavor-item"><span>花香</span><div class="dot-bar"><span class="dots" style="width: 50%"></span></div></div>
+                            <div class="flavor-item"><span>果酸</span><div class="dot-bar"><span class="dots" style="width: 40%"></span></div></div>
+                            <div class="flavor-item"><span>甘甜</span><div class="dot-bar"><span class="dots" style="width: 90%"></span></div></div>
+                        </div>
+                    </div>
+                    <div class="bean-card-footer">
+                        <span class="bean-price">NT$ 1,280 <small>/ 227g</small></span>
+                        <button class="btn btn-outline-gold btn-order-bean" data-bean="牙買加 藍山 No.1">訂購</button>
+                    </div>
+                </div>
+
+                <!-- 豆款卡片 3 -->
+                <div class="bean-card reveal-on-scroll">
+                    <div class="bean-card-header">
+                        <span class="bean-origin">印尼</span>
+                        <h4 class="bean-name">黃金曼特寧 (Golden Mandheling)</h4>
+                    </div>
+                    <div class="bean-card-body">
+                        <p class="bean-desc">經過四次人工手選挑豆，極致乾淨的草本香與焦糖甜感，醇厚度極高，尾韻帶有濃郁的可可與木質香調。</p>
+                        <div class="roast-info">
+                            <span>烘焙：中深焙</span>
+                            <span>海拔：1,400m</span>
+                        </div>
+                        <div class="flavor-indicators">
+                            <div class="flavor-item"><span>花香</span><div class="dot-bar"><span class="dots" style="width: 30%"></span></div></div>
+                            <div class="flavor-item"><span>果酸</span><div class="dot-bar"><span class="dots" style="width: 20%"></span></div></div>
+                            <div class="flavor-item"><span>甘甜</span><div class="dot-bar"><span class="dots" style="width: 85%"></span></div></div>
+                        </div>
+                    </div>
+                    <div class="bean-card-footer">
+                        <span class="bean-price">NT$ 750 <small>/ 227g</small></span>
+                        <button class="btn btn-outline-gold btn-order-bean" data-bean="印尼 黃金曼特寧">訂購</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 職人沖煮特色 (Brewing Craft) -->
+    <section class="craft-section" id="craft">
+        <div class="container">
+            <div class="craft-grid">
+                <div class="craft-image-wrapper reveal-on-scroll">
+                    <img src="images/brewing_craft.png" alt="職人手沖咖啡特寫" class="craft-img">
+                </div>
+                <div class="craft-text-content reveal-on-scroll">
+                    <span class="section-tag">THE CRAFT</span>
+                    <h2 class="section-title">職人沖煮的 毫克極致</h2>
+                    <div class="section-divider-left"></div>
+                    <p class="craft-p">在 AURA CAFÉ，咖啡沖煮是一門嚴謹的精密科學，也是一場無與倫比的視覺藝術演出。我們的烘焙師與沖煮師（Baristas）皆持有國際 SCA 高級認證，日復一日地淬煉著杯中的液體黃金。</p>
+                    
+                    <div class="craft-features">
+                        <div class="craft-feat-item">
+                            <div class="feat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9a3 3 0 0 0-3 3M12 3a9 9 0 0 0-9 9M12 21a9 9 0 0 0 9-9M18.8 6a8.8 8.8 0 0 0-6.8-3v9l6.8-6Z"/></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>0.1g 精密秤量與水粉比</h4>
+                                <p>嚴格控管 1:15 至 1:16 的黃金萃取比例，精確至 0.1 克以維持每一口咖啡風味的層次與純淨。</p>
+                            </div>
+                        </div>
+
+                        <div class="craft-feat-item">
+                            <div class="feat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5"/><path d="M12 2v10"/><path d="m9 5 3-3 3 3"/></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>溫度控制美學 (88°C - 93°C)</h4>
+                                <p>根據每款豆子的產地、烘焙度與熟成期，量身定制最契合的沖煮水溫，釋放最佳甜度與適口性。</p>
+                            </div>
+                        </div>
+
+                        <div class="craft-feat-item">
+                            <div class="feat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/><path d="M12 2v4"/><path d="M12 6c-3.3 0-6 2.7-6 6M12 6c3.3 0 6 2.7 6 6"/></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h4>專屬客製化手法</h4>
+                                <p>無論是凸顯花香的 V60 手沖、保留醇厚油脂的法式濾壓，或是著重細膩口感的虹吸，皆能完美呈現。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 空間藝廊 (Space Gallery) -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">SPACES</span>
+                <h2 class="section-title">流動於 光影間的沉浸空間</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">當極簡美學遇上奢華黃銅與黑色大理石，為您提供靜謐、尊榮的午后時光。</p>
+            </div>
+            
+            <div class="gallery-grid reveal-on-scroll">
+                <div class="gallery-item" data-src="images/hero_bg.png">
+                    <img src="images/hero_bg.png" alt="精品咖啡吧台與黃銅燈飾">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">+</span>
+                        <span class="gallery-title">精品咖啡吧台</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/space_gallery_1.png">
+                    <img src="images/space_gallery_1.png" alt="尊榮雅座區與柔和採光">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">+</span>
+                        <span class="gallery-title">尊榮雅座區</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-src="images/space_gallery_2.png">
+                    <img src="images/space_gallery_2.png" alt="職人沖煮器具與大理石吧台">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">+</span>
+                        <span class="gallery-title">職人沖煮區</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 線上訂位與訂購表單 (Booking Section) -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="booking-wrapper reveal-on-scroll">
+                <div class="booking-tabs">
+                    <button class="tab-btn active" data-tab="reserve">線上訂位 (Table Reservation)</button>
+                    <button class="tab-btn" data-tab="order">單品豆訂購 (Coffee Bean Order)</button>
+                </div>
+                
+                <div class="booking-forms-container">
+                    <!-- 訂位表單 -->
+                    <form id="reserveForm" class="booking-form active-form">
+                        <h3 class="form-title">頂級沉浸體驗預約</h3>
+                        <p class="form-subtitle">我們每日保留部分席位供貴賓線上預約，敬請提前填寫。</p>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="resName">貴賓姓名 *</label>
+                                <input type="text" id="resName" required placeholder="例如：林先生 / 陳小姐">
+                            </div>
+                            <div class="form-group">
+                                <label for="resPhone">聯絡電話 *</label>
+                                <input type="tel" id="resPhone" required placeholder="0912-345678">
+                            </div>
+                            <div class="form-group">
+                                <label for="resGuests">預約人數 *</label>
+                                <select id="resGuests" required>
+                                    <option value="1">1 位</option>
+                                    <option value="2" selected>2 位</option>
+                                    <option value="3">3 位</option>
+                                    <option value="4">4 位</option>
+                                    <option value="large">5 位以上 (將有專人聯繫)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="resDate">預約日期 *</label>
+                                <input type="date" id="resDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resTime">預約時段 *</label>
+                                <select id="resTime" required>
+                                    <option value="morning">10:00 - 12:00</option>
+                                    <option value="noon">12:00 - 14:00</option>
+                                    <option value="afternoon" selected>14:00 - 17:00</option>
+                                    <option value="evening">17:00 - 20:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="resPreference">座位喜好</label>
+                                <select id="resPreference">
+                                    <option value="bar">吧台區 (近距離觀賞職人手沖)</option>
+                                    <option value="window" selected>靠窗區 (明亮光線與街景)</option>
+                                    <option value="sofa">沙發區 (舒適放鬆)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="resNote">特殊需求備註 (選填)</label>
+                            <textarea id="resNote" rows="3" placeholder="如有慶生、商務會議等特殊需求，請於此註明"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-block">確認送出預約</button>
+                    </form>
+
+                    <!-- 訂購表單 -->
+                    <form id="orderForm" class="booking-form">
+                        <h3 class="form-title">精品咖啡豆線上訂購</h3>
+                        <p class="form-subtitle">嚴選莊園咖啡豆，下單後新鮮烘焙、密封包裝，為您直送府上。</p>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="orderBean">選擇單品豆 *</label>
+                                <select id="orderBean" required>
+                                    <option value="panama-geisha">巴拿馬翡翠莊園 瑰夏 - NT$1,200/100g</option>
+                                    <option value="ethiopia-yirgacheffe">衣索比亞 耶加雪菲 - NT$680/227g</option>
+                                    <option value="jamaica-blue-mountain">牙買加 藍山 No.1 - NT$1,280/227g</option>
+                                    <option value="indonesia-mandheling">印尼 黃金曼特寧 - NT$750/227g</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderQty">購買數量 *</label>
+                                <input type="number" id="orderQty" min="1" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderGrind">研磨需求 *</label>
+                                <select id="orderGrind" required>
+                                    <option value="beans" selected>不需研磨 (保留整粒咖啡豆)</option>
+                                    <option value="hand-drip">中細研磨 (適合手沖、法蘭絨)</option>
+                                    <option value="espresso">極細研磨 (適合義式咖啡機)</option>
+                                    <option value="syphon">中度研磨 (適合虹吸、美式壺)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderName">收件人姓名 *</label>
+                                <input type="text" id="orderName" required placeholder="請填寫中文全名">
+                            </div>
+                            <div class="form-group">
+                                <label for="orderPhone">收件人電話 *</label>
+                                <input type="tel" id="orderPhone" required placeholder="0912-345678">
+                            </div>
+                            <div class="form-group">
+                                <label for="orderMail">聯絡信箱 *</label>
+                                <input type="email" id="orderMail" required placeholder="yourname@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderAddress">收件地址 *</label>
+                            <input type="text" id="orderAddress" required placeholder="請輸入完整的寄送地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="orderNote">備註說明 (選填)</label>
+                            <textarea id="orderNote" rows="2" placeholder="如有其他需求或寄送備註，請在此說明"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-block">確認送出訂單</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌頁尾 (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-text">AURA</span>
+                        <span class="logo-sub">CAFÉ</span>
+                    </a>
+                    <p class="footer-brand-desc">在繁雜的世界裡，為您尋覓一口純淨的咖啡芬芳。結合極致的沖煮工藝，淬煉每一次優雅的感官交融。</p>
+                </div>
+                <div class="footer-info">
+                    <h4>聯絡我們</h4>
+                    <ul class="info-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>(02) 2345-6789</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>service@auracafe.com.tw</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>台北市信義區精品路 88 號 1 樓</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>營業時間</h4>
+                    <p class="hours-p">週一 至 週五 ｜ 10:00 - 21:00</p>
+                    <p class="hours-p">週六 ＆ 週日 ｜ 09:00 - 22:00</p>
+                    <p class="hours-note">* 線上訂位保留 15 分鐘，週末用餐時間為 2 小時。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AURA CAFÉ. All Rights Reserved. Designed with Luxury Aesthetics. | <a href="admin.html" target="_blank" style="color: var(--clr-gold); text-decoration: underline;">管理登入</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 圖片放大燈箱 (Lightbox Modal) -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="放大圖示">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- 表單提交成功提示 (Custom Toast/Alert Dialog) -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="toast-content">
+            <span class="toast-icon">✓</span>
+            <div class="toast-text">
+                <h4 id="toastTitle">預約成功</h4>
+                <p id="toastMessage">我們將儘速發送確認簡訊至您的手機，期待您的光臨！</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

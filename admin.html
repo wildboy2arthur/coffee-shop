@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA CAFÉ | 後台管理系統</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Main Style Sheet (包含後台專屬樣式) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+    <!-- 密碼登入驗證遮罩 (模擬安全保護) -->
+    <div class="admin-login-overlay" id="loginOverlay">
+        <div class="login-box">
+            <h2 class="login-title">AURA 管理員登入</h2>
+            <p class="login-subtitle">請輸入管理密碼以存取預約資料</p>
+            <div class="form-group">
+                <input type="password" id="adminPassword" placeholder="輸入登入密碼 (預設：aura888)" required>
+                <span class="error-msg" id="loginError">密碼錯誤，請重新輸入</span>
+            </div>
+            <button class="btn btn-gold btn-block" id="btnLogin">登入系統</button>
+            <a href="index.html" class="back-to-home">← 返回品牌官網</a>
+        </div>
+    </div>
+
+    <!-- 後台主內容 -->
+    <div class="admin-container" id="adminContent" style="display: none;">
+        
+        <!-- 後台 Header -->
+        <header class="admin-header">
+            <div class="admin-brand">
+                <a href="#" class="logo">
+                    <span class="logo-text">AURA</span>
+                    <span class="logo-sub">SYSTEM</span>
+                </a>
+                <span class="admin-badge">預約控制台</span>
+            </div>
+            <div class="admin-user-actions">
+                <span class="admin-user">Administrator</span>
+                <button class="btn-logout" id="btnLogout">安全登出</button>
+            </div>
+        </header>
+
+        <!-- 管理區塊主面板 -->
+        <main class="admin-main">
+            
+            <!-- 篩選控制列 -->
+            <section class="admin-filter-bar">
+                <div class="filter-title-group">
+                    <h1 class="admin-panel-title">預約名單查詢</h1>
+                    <p class="admin-panel-desc">選擇特定日期以讀取 Google Sheets 上的即時席位預約資料</p>
+                </div>
+                <div class="filter-actions">
+                    <div class="form-group-inline">
+                        <label for="filterDate">查詢日期：</label>
+                        <input type="date" id="filterDate">
+                    </div>
+                    <button class="btn btn-gold" id="btnQuery">
+                        <span class="btn-text">讀取即時資料</span>
+                        <span class="btn-loading" id="btnLoading" style="display: none;">
+                            <span class="spinner"></span> 讀取中...
+                        </span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- 數據概覽卡片 -->
+            <section class="admin-stats-grid">
+                <div class="stats-card">
+                    <span class="stats-label">當日預約組數</span>
+                    <h3 class="stats-value" id="statGroupCount">0 <small>組</small></h3>
+                </div>
+                <div class="stats-card">
+                    <span class="stats-label">當日預約人數</span>
+                    <h3 class="stats-value" id="statGuestCount">0 <small>人</small></h3>
+                </div>
+                <div class="stats-card">
+                    <span class="stats-label">最受歡迎時段</span>
+                    <h3 class="stats-value" id="statPopularTime">-</h3>
+                </div>
+            </section>
+
+            <!-- 資料表格區 -->
+            <section class="admin-table-wrapper">
+                <div class="table-header-bar">
+                    <h2 class="table-bar-title" id="tableTitle">2026-06-19 預約清單</h2>
+                    <span class="data-source-badge">Google Sheets 連線成功</span>
+                </div>
+                <div class="table-scroll-container">
+                    <table class="admin-table" id="reservationsTable">
+                        <thead>
+                            <tr>
+                                <th>預約時段</th>
+                                <th>貴賓姓名</th>
+                                <th>聯絡電話</th>
+                                <th>人數</th>
+                                <th>座位喜好</th>
+                                <th>特殊備註</th>
+                                <th>登記時間</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- 資料將動態插入此處 -->
+                            <tr class="empty-row">
+                                <td colspan="7">請選擇日期並點擊「讀取即時資料」查詢</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="admin-footer">
+            <p>&copy; 2026 AURA CAFÉ. All Rights Reserved. Google Sheets API Integration.</p>
+            <a href="index.html" class="back-to-home">← 返回品牌官網</a>
+        </footer>
+    </div>
+
+    <!-- Admin Page JavaScript -->
+    <script src="admin.js"></script>
+</body>
+</html>
