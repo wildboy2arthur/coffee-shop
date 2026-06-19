@@ -120,3 +120,13 @@ function doOptions(e) {
 1. 全局安裝 Netlify CLI（若尚未安裝）：`npm install -g netlify-cli`
 2. 在 `coffee-shop/` 目錄下執行登入：`netlify login`
 3. 執行部署：`netlify deploy --prod --dir=.`
+
+---
+
+## 🌐 GitHub Pages 部署
+
+本專案已成功託管於 GitHub，並啟用 GitHub Pages 自動發布：
+
+* **GitHub 儲存庫**：[https://github.com/wildboy2arthur/coffee-shop](https://github.com/wildboy2arthur/coffee-shop)
+* **GitHub Pages 線上官網**：[https://wildboy2arthur.github.io/coffee-shop/](https://wildboy2arthur.github.io/coffee-shop/)
+* **GitHub Pages 線上後台**：[https://wildboy2arthur.github.io/coffee-shop/admin.html](https://wildboy2arthur.github.io/coffee-shop/admin.html) (預設密碼：`aura888`)
